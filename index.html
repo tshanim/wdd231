@@ -3,11 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Web Frontend Development I</title>
+    <meta name="description" content="Home page">
+    <meta name="author" content="William Mbuyamba Tshani">
+    <title>Home Page | William Tshani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-    <h1>Web Frontend Development I - Wiliam Tshani</h1>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span> William Tshani</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                I'm William Mbuyamba Tshani, based in Johannesburg, South Africa. I'm currently pursuing a Bachelor of Science in
+                Applied Technology through BYU–Idaho. My passion lies in leadership, innovation, and designing systems that uplift
+                communities. I thrive on learning, mentoring, and exploring ideas that contribute to a brighter, more sustainable future
+                for Africa.            
+            </p>
+        </section>
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/williamT-photo.png" alt="William mbuyamba Tshani" width="200" height="200">
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-box">
+                <button class="course-btn" value="all" title="Filter button">All</button>
+                <button class="course-btn" value="cse" title="Filter button">SCE</button>
+                <button class="course-btn" value="wdd" title="Filter button">WDD</button>
+            </div>
+            <div class="boxcertificate01 boxCourse"></div>
+            <dialog id="courses-details"></dialog>
+            <p id="totalCreditsCert01">Total Credits for Certificate 1: 0</p>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/william-tshani" target="_blank"><img src="images/linkedin.svg" alt="linked in"
+                    width="16" height="16"></a>
+            <a href="https://github.com/tshanim" target="_blank"><img src="images/github.svg" alt="github" width="16"
+                    height="16"></a>
+            <a href="https://x.com/btatshani" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16"
+                    height="16"></a>                        
+        </div>
+        <div class="footer-info">
+            <p>&copy;<span id="currentyear">Lorem</span> • William Mbuyamba Tshani • Johannesburg, South Africa</p>
+            <p id="lastModified">Lorem ipsum</p>
+        </div>        
+    </footer>  
     
 </body>
 </html>
