@@ -165,21 +165,21 @@ nav a.active {
 
 main {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto 1fr auto;
-    gap: 20px;
-    margin: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
  .about-me {
+    grid-column: 1/2;
 
  }
 
  .student-photo {
+    grid-column: 2/3;
 
  }
 
  .certificate-box {
-    
+    grid-column: span 2; 
  }
 
 main section {
