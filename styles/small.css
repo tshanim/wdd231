@@ -164,8 +164,11 @@ nav a.active {
 /************************** MAIN CONTENT **************/
 
 main {
-    
-
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    margin: 20px;
 }
 
 main section {
