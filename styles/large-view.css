@@ -1,0 +1,74 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* **************** HEADER ************ */
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    /* **************** HAMBURGER ************ */
+    .hamburger {
+        display: none;
+    }
+
+    /* **************** NAVIGATION MENU ************ */
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /* **************** HOME PAGE ************ */
+    .section1 {
+        display: flex;
+        column-gap: 10px;
+        color: #3D405B;
+        justify-content: center;
+    }
+
+    .section1 img {
+        width: 100%;
+        height: auto;
+        margin-left: 10px;
+
+    }
+
+    p {
+        margin-left: 10px;
+    }
+
+    .course-container button {
+        margin-left: 27px;
+    }
+
+    .course-btn {
+        width: 16rem;
+    }
+
+    .second-screen img {
+        width: 250px;
+        padding-left: 8px;
+    }
+
+    .main-course {
+        column-gap: 7rem;
+        margin-left: 14rem;
+    }
+
+    .counter {
+        font-size: 14px;
+    }
+}

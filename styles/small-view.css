@@ -1,0 +1,326 @@
+:root {
+    /*Breakpoint 
+    --desktop-vw: 1200px;
+    --laptop-vw: 1024px;
+    --table-vw: 768px;
+    --phone-vw: 480px;
+    */
+
+    /* CSS HEX */
+    --true-blue: #0466c8ff;
+    --sapphire: #0353a4ff;
+    --yale-blue: #023e7dff;
+    --oxford-blue: #002855ff;
+    --oxford-blue-2: #001845ff;
+    --oxford-blue-3: #001233ff;
+    --delft-blue: #33415cff;
+    --paynes-gray: #5c677dff;
+    --slate-gray: #7d8597ff;
+    --cool-gray: #979dacff;
+    --alice-blue: #edf6f9ff;
+
+    /* Text Colors */
+    /* Headlines on a white background */
+    --headline-color-on-white: var(--oxford-blue-3);
+    /* Headlines on a colored background */
+    --headline-color-on-color: var(--alice-blue);
+    /* Paragraph text on a white background */
+    --paragraph-color-on-white: var(--secondary-color);
+    /* Paragraph text on a colored background */
+    --paragraph-color-on-color: var(--accent3-color);
+
+    --paragraph-background-color: var(--alice-blue);
+
+    /* Navigation Colors */
+    --nav-link-color: var(--oxford-blue-3);
+    --nav-background-color: var(--cool-gray);
+    --nav-hover-link-color: var(--oxford-blue-3);
+    --nav-hover-background-color: var(--true-blue);
+
+    --barlow-regular-font-family: "Barlow", sans-serif;
+    --barlow-regular-font-weight: 400;
+    --barlow-regular-font-style: normal;
+
+    --lato-regular-font-family: "Lato", sans-serif;
+    --lato-regular-font-weight: 400;
+    --lato-regular-font-style: normal;
+
+    --font-size-small: 16px;
+    --font-size-base: 20px;
+    --font-size-large: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+li {
+    font-family: var(--lato-regular-font-family);
+}
+
+p {
+    font-family: var(--barlow-regular-font-family);
+}
+
+body {
+    background-color: var(--alice-blue);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ************************ HEADER CONTENT ********************** */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1rem;
+    margin: 0.1rem;
+}
+
+/* ************************* HAMBURGER MENU ************* */
+.hamburger {
+    font-size: 40px;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: var(--oxford-blue);
+    color: var(--alice-blue);
+}
+
+.hamburger {
+    font-family: Roboto, sans-serif;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.5rem;
+    cursor: pointer;
+    border: 0;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* ************************* NAVIGATION CONTENT ************* */
+.navigation {
+    background-color: var(--yale-blue);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    border-bottom: 1px solid #555;
+}
+
+.navigation a {
+    display: block;
+    color: var(--alice-blue);
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.navigation a:hover:not(.active) {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+.navigation a:hover {
+    background-color: #E07A5F;
+}
+
+nav a.active {
+    background-color: #fef9d9;
+    color: var(--oxford-blue-3);
+}
+
+/* **************** MAIN CONTENT ************ */
+
+h1 {
+    margin-left: 10px;
+    color: var(--oxford-blue-3);
+}
+
+.section1 h2 {
+    background-color: var(--oxford-blue-3);
+    color: var(--headline-color-on-color);
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    font-size: var(--font-size-base);
+    padding: 10px 0;
+}
+
+.section1 {
+    display: block;
+    color: #3D405B;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.section1 .first-screen {
+    background-color: #eee;
+}
+
+.section1 .second-screen {
+    background-color: #eee;
+}
+
+.first-screen h2 {
+    margin-left: 0;
+}
+
+/* ***********SECOND SCREEN************** */
+.course-btn {
+    width: 5rem;
+    height: 1.5rem;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    margin: 12px;
+}
+
+.second-screen h2 {
+    margin-left: 0;
+}
+
+.main-course {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 1.7rem;
+    column-gap: 8px;
+    width: 5rem;
+    height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.course-container .course-btn:hover {
+    background-color: #E07A5F;
+}
+
+.course-container button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #3D405B;
+    font-weight: bold;
+}
+
+.course {
+    background-color: #ccc;
+    margin-bottom: 8px;
+    color: #3D405B;
+    text-align: center;
+    background-color: #eeef;
+
+}
+
+.second-screen img {
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+h2 {
+    margin-left: 10px;
+    background-color: #ccc;
+    color: #3D405B;
+    margin-top: 0;
+    text-align: center;
+}
+
+.first-screen p {
+    font-size: 15px;
+    padding: 20px;
+    font-size: var(--font-size-small);
+    margin: 0 0 10px 0;
+}
+
+.counter {
+    font-size: 10px;
+    font-weight: bold;
+    color: #3D405B;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* **************** THIRD SCREEN ********* */
+.third-screen h2 {
+    background-color: var(--oxford-blue-3);
+    color: var(--headline-color-on-color);
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    font-size: var(--font-size-base);
+    padding: 10px 0;
+}
+
+/************************** FOOTER **************/
+footer {
+    padding: 1rem 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #5c677dff solid 1px;
+    border-radius: 25px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+div.footer-info {
+    background-color: var(--oxford-blue);
+    color: var(--alice-blue);
+}
+

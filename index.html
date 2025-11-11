@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,49 +11,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small-view.css">
+    <link rel="stylesheet" href="styles/large-view.css">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
+    <!-- <script src="scripts/courses.js" defer></script> -->
+    <script src="scripts/certificate-01.js" defer></script>
 </head>
+
 <body>
     <header>
         <img src="images/home.svg" alt="Site Logo" width="512" height="512">
-        <span> William Tshani</span>
+        <span> William Mbuyamba Tshani</span>
         <button id="menu" class="hamburger" title="Menu"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
             <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Final</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
     <main>
         <h1>Home</h1>
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p id="abt-me-par">
-                I'm William Mbuyamba Tshani, based in Johannesburg, South Africa. I'm currently pursuing a Bachelor of Science in
-                Applied Technology through BYU–Idaho. My passion lies in leadership, innovation, and designing systems that uplift
-                communities. I thrive on learning, mentoring, and exploring ideas that contribute to a brighter, more sustainable future
-                for Africa.            
-            </p>
-        </section>
-        <section class="student-photo">
-            <h2>Student Photo</h2>
-            <img src="images/williamT-photo.png" alt="William mbuyamba Tshani" width="200" height="200">
-        </section>
-        <section class="certificate-box">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="boxButton">
-                <button class="courseButton" value="all" title="Filter button">All</button>
-                <button class="courseButton" value="cse" title="Filter button">SCE</button>
-                <button class="courseButton" value="wdd" title="Filter button">WDD</button>
+        <!-----------------SECTION ONE-------------->
+        <section class="section1">
+            <div class="first-screen">
+                <h2>About Me</h2>
+                <p>
+                    I'm William Mbuyamba Tshani, based in Johannesburg, South Africa. I'm currently pursuing a Bachelor of
+                    Science in Applied Technology through BYU–Idaho. My passion lies in leadership, innovation, and designing systems
+                    that uplift communities. I thrive on learning, mentoring, and exploring ideas that contribute to a brighter, more
+                    sustainable future for Africa.
+                </p>
             </div>
-            <div class="boxcertificate01 boxCourse"></div>
-            <dialog id="courses-details"></dialog>
-            <p id="totalCreditsCert01">Total Credits for Certificate 1: 0</p>
+            <div class="second-screen">
+                <h2>Student Photo</h2>
+                <img src="images/williamT-photo.png" alt="Student Image" loading="lazy">
+            </div>
+        </section>
+        <!------------------SECTION SECTION----------------------->
+        <section>
+    
+        </section>
+        <!-------------------THIRD SECTION----------------------->
+        <section class="section3">
+            <div class="third-screen">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="course-container">
+                    <button class="course-btn" id="all-courses">All</button>
+                    <button class="course-btn" id="cse-courses">CSE</button>
+                    <button class="course-btn wdd" id="wdd-courses">WDD</button>
+                </div>
+                <div class="counter" id="counter"></div>
+                <div class="course-container main-course" id="course-container">
+    
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -62,13 +76,13 @@
             <a href="https://github.com/tshanim" target="_blank"><img src="images/github.svg" alt="github" width="16"
                     height="16"></a>
             <a href="https://x.com/btatshani" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16"
-                    height="16"></a>                        
+                    height="16"></a>
         </div>
         <div class="footer-info">
             <p>&copy;<span id="currentyear">Lorem</span> • William Mbuyamba Tshani • Johannesburg, South Africa</p>
             <p id="lastModified">Lorem ipsum</p>
-        </div>        
-    </footer>  
-    
+        </div>
+    </footer>
 </body>
+
 </html>
