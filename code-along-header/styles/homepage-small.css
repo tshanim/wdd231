@@ -75,7 +75,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
-    padding: 20px;
+    padding: 5px 0 5px 10px;
     align-items: end;
     column-gap: 8px;
 }
@@ -89,7 +89,7 @@ header img {
 
 header span {
     font-size: 1rem;
-    margin: 0.5rem;
+    margin: 0.1rem;
 }
 
 /************************** HAMBURGER MENU **************/
@@ -162,25 +162,28 @@ nav a.active {
 }
 
 /************************** MAIN CONTENT **************/
-
 main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
 }
- .about-me {
-    grid-column: 1/2;
 
- }
+h1 {
+    color: #3D405B;
+    margin-bottom: 0;
+    grid-column: 1/3;
+}
 
- .student-photo {
-    grid-column: 2/3;
+.about-me {
+    grid-column: 1/3;
+    grid-row: 2;
+}
 
- }
-
- .certificate-box {
-    grid-column: span 2; 
- }
+/*.certificate-box {
+    grid-row: 3;
+    grid-column: 1 / 3;
+}*/
 
 main section {
     border-radius: 5px;
@@ -198,11 +201,12 @@ section h2 {
     font-size: var(--font-size-base);
     padding: 10px 0;
 }
+
 section img {
     display: block;
     height: auto;
-    width: 30%; 
-    padding: 30px;   
+    width: 60%;
+    padding: 50px;
 }
 
 section img {
@@ -212,12 +216,12 @@ section img {
 
 #abt-me-par {
     text-align: left;
+    padding: 50px;
 }
 
 section p {
     font-size: var(--font-size-small);
     margin: 0 0 10px 0;
-    padding: 20px;
 }
 
 .boxcertificate01 {
@@ -291,7 +295,7 @@ section p {
 }
 
 .course {
-    border:var(--oxford-blue-3) solid 2px;
+    border: var(--oxford-blue-3) solid 2px;
     width: 80%;
     padding: 10px;
     border-radius: 5px;
@@ -423,3 +427,47 @@ div.footer-info {
     color: var(--alice-blue);
 }
 
+@media (min-width: 480px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        max-width: 768px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin: 10px auto;
+    }
+
+    main p {
+        font-size: var(--font-size-base);
+    }
+
+    section {
+        flex-basis: 15em;
+        flex-grow: 1;
+    }
+
+    .boxcertificate01 {
+        width: 650px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+        grid-gap: 1em;
+    }
+
+    .course {
+        padding: 10px;
+    }
+}
