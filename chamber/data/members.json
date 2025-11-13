@@ -1,0 +1,112 @@
+[
+  {
+    "Name": "Woolworths South Africa",
+    "Industry": "Retail",
+    "Physical Address": "93 Longmarket Street, Capte Town",
+    "Website": "https://www.woolworths.co.za",
+    "Phone": "+27 21 407 9111",
+    "Representative": "Roy Bagattini / CEO",
+    "MemberSince": "2000-04-01",
+    "Membership": "Gold",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Woolworths_South_Africa.png/440px-Woolworths_South_Africa.png"
+  },
+  {
+    "Name": "Sasol Limited",
+    "Industry": "Energy & Chemicals",
+    "Physical Address": "Sasol Place, 50 Katherine Street, Sandton, Johannesburg",
+    "Website": "https://www.sasol.com",
+    "Phone": "+27 10 344 5000",
+    "Representative": "Fleetwood Grobler / President & CEO",
+    "MemberSince": "1995-09-01",
+    "Membership": "Gold",
+    "logo": "https://companieslogo.com/img/orig/SSL_BIG-b85eb681.png?t=1674024834"
+  },
+  {
+    "Name": "Capitec Bank",
+    "Industry": "Financial Services",
+    "Physical Address": "5 Neutron Road, Techno Park, Stellenbosch",
+    "Website": "https://www.capitecbank.co.za",
+    "Phone": "+27 21 941 1377",
+    "Representative": "Gerrie Fourie / CEO",
+    "MemberSince": "2006-07-01",
+    "Membership": "Silver",
+    "logo": "https://images.seeklogo.com/logo-png/46/1/capitec-bank-logo-png_seeklogo-468020.png"
+  },
+  {
+    "Name": "3M South Africa",
+    "Industry": "Manufacturing",
+    "Physical Address": "3M Building, Woodmead Business Park, Johannesburg",
+    "Website": "https://www.3m.co.za",
+    "Phone": "+27 11 378 9100",
+    "Representative": "Israel Meza / Site Manager; Fernando Pellicano / Operations Director",
+    "MemberSince": "2016-11-01",
+    "Membership": "Gold",
+    "logo": "https://vectorseek.com/wp-content/uploads/2023/08/3M-Authorized-Window-Film-Dealer-Logo-Vector.svg-.png"
+  },
+  {
+    "Name": "Pick n Pay",
+    "Industry": "Retail & Consumer Goods",
+    "Physical Address": "101 Rosmead Avenue, Kenilworth, Cape Town",
+    "Website": "https://www.pnp.co.za",
+    "Phone": "+27 21 658 1000",
+    "Representative": "Sean Summers / CEO",
+    "MemberSince": "2001-06-01",
+    "Membership": "Silver",
+    "logo": "https://www.pinclipart.com/picdir/big/542-5421980_pick-n-pay-logo-clipart.png"
+  },
+  {
+    "Name": "Air Africa",
+    "Industry": "Transportation & Logistics",
+    "Physical Address": "OR Tambo International, Terminal Office Block",
+    "Website": "https://airafrica.co.za",
+    "Phone": "+27 11 382 3291",
+    "Representative": "Carlos Conde / Country Manager for South Africa",
+    "MemberSince": "2019-05-02",
+    "Membership": "Silver",
+    "logo": "https://images.hobbydb.com/processed_uploads/subject_photo/subject_photo/image/20396/1486837349-24608-1938/Air_20Afrique_20logo_large.png"
+  },
+  {
+    "Name": "ABB South Africa",
+    "Industry": "Energy",
+    "Physical Address": "Financial Park, 19th Floor, Melrose Arch, Johannesburg",
+    "Website": "https://new.abb.com/za",
+    "Phone": "N/A",
+    "Representative": "Gabriela Gonzalez / Country Finance Manager",
+    "MemberSince": "2020-12-01",
+    "Membership": "Gold",
+    "logo": "https://stufnews.com/wp-content/uploads/2022/04/ABB-South-Africa.jpg"
+  },
+  {
+    "Name": "Abbott SA",
+    "Industry": "Health, Medicine, Pharmacy",
+    "Physical Address": "Reprico Building, 2nd Floor, Midrand, Johannesburg",
+    "Website": "https://www.abbott.co.za",
+    "Phone": "+27 11 229 1086",
+    "Representative": "Carlos Urrego / Country Manager",
+    "MemberSince": "2020-11-01",
+    "Membership": "Bronze",
+    "logo": "https://purepng.com/public/uploads/large/purepng.com-abbott-logologobrand-logoiconslogos-251519939912nuzls.png"
+  },
+  {
+    "Name": "AES South Africa",
+    "Industry": "Energy",
+    "Physical Address": "Business Park II, Tower V, 11th Floor, Sandton",
+    "Website": "https://aes.co.za",
+    "Phone": "+27 11 206 2600",
+    "Representative": "Miguel Bolinaga / President & CEO",
+    "MemberSince": "1999-05-01",
+    "Membership": "Silver",
+    "logo": "https://www.aes-africa.com/wp-content/uploads/2023/05/AES_Logo-600px.jpg#14893"
+  },
+  {
+    "Name": "AIESEC South Africa",
+    "Industry": "Education",
+    "Physical Address": "Wits University, Office 148B, Braamfontein",
+    "Website": "https://aiesec.org.za",
+    "Phone": "+27 11 306 3130",
+    "Representative": "Santiago Henao López / Head of Business Development",
+    "MemberSince": "2009-01-01",
+    "Membership": "Gold",
+    "logo": "https://aiesec-logos.s3.eu-west-1.amazonaws.com/White-Blue-Logo.png"
+  }
+]
