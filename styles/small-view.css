@@ -93,7 +93,7 @@ header span {
 }
 
 /* ************************* HAMBURGER MENU ************* */
-.hamburger {
+button .hamburger {
     font-size: 40px;
     text-decoration: none;
     padding: 8px 12px;
@@ -231,7 +231,7 @@ h1 {
 }
 
 .course {
-    background-color: #ccc;
+    
     margin-bottom: 8px;
     color: #3D405B;
     text-align: center;
@@ -256,7 +256,6 @@ h2 {
 }
 
 .first-screen p {
-    font-size: 15px;
     padding: 20px;
     font-size: var(--font-size-small);
     margin: 0 0 10px 0;
