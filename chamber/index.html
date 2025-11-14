@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Directory | Chamber Panama">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://demetrioaris.github.io/wdd231/chamber/images/logo-chamber-modified-small.webp">
+    <meta property="og:url" content="https://demetrioaris.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Chamber of Panamá, Join us to get more information">
+    <meta property="fb:app_id" content="your-app-id-here">
+
+
+    <title>Directory | Johannesburg Chamber of Commerce</title>
+    <meta name="description" content="Chamber directory, Johannesburg">
+    <meta name="author" content="William Tshani">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
+    </noscript>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+    <script type="module" src="./scripts/app.js"></script>
+    <script src="./scripts/modules/home.js" defer></script>
+
+
+    <link rel="icon" href="images/favicon-main-modified.ico" sizes="48x48" type="image/ico">
+    <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="index-page">
+    <header>
+        <nav>
+            <div class="box-logo-header">
+                <img class="logo-chamber" src="../chamber/images/Jhb-Chamber.png"
+                    alt="Logo for the Johannesbug Chamber of Commerce" />
+                <h1 class="nameHeader">Johannesburg City<br>Chamber of Commerce</h1>
+                <button name="navigation button" id="menu" aria-label="Toggle menu"></button>
+            </div>
+            <ul>
+                <li><a class="nav-a " href="./index.html">Home</a></li>
+                <li><a class="nav-a " href="./discover.html">Discover</a></li>
+                <li><a class="nav-a " href="./directory.html">Directory</a></li>
+                <li><a class="nav-a " href="./join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-main-box">
+            <picture class="hero-box-img">
+                <source media="(max-width: 600px)" srcset="images/hero-image-jcc.png">
+                <source media="(max-width: 800px)" srcset="images/hero-image-jcc.png">
+                <source media="(max-width: 1200px)" srcset="images/hero-image-jcc.png">
+                <source media="(min-width: 1201px)" srcset="images/hero-image-jcc.png">
+                <img class="hero-home-img" src="images/hero-image-jcc.png" alt="Johanesburg City">
+            </picture>
+
+            <div class="call-to-action">
+                <h3>Join the Johannesburg Chamber of Commerce today!</h3>
+                <p>Enhance your business network, access exclusive resources, and drive local economic growth.</p>
+                <p>Click here to become a member and start making a difference.</p>
+                <button class="join-us" name="join" onclick="window.location.href='/chamber/join.html'">Join us</button>
+            </div>
+        </section>
+        <section class="event-main-box">
+            <article class="event-main">
+                <h2>Current Events</h2>
+                <div id="events-list">
+                </div>
+            </article>
+            <article class="weather-main" id="weather-main"></article>
+            <article class="weather-forecast" id="weather-forecast"></article>
+        </section>
+        <section class="spotlights-main-box"></section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Johannesburg Chamber of Commerce</h3>
+                <p>Address: 100 Commissioner Street, Johannesburg, South Africa</p>
+                <p>Email: <a href="mailto:info@joburgcc.org">info@joburgcc.org</a></p>
+                <p>Phone: <a href="tel:+27115552300">+27 (11) 555-2300</a></p>
+            </div>
+    
+            <div class="social-media">
+                <a href="https://www.youtube.com/channel/UCJ49rT-RxvOmdSP6T9h7dJw" target="_blank" aria-label="YouTube">
+                    <img src="./images/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://x.com/JHBJCCI/status/1878750828754001962" target="_blank" aria-label="Twitter">
+                    <img src="./images/twitter-x.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/company/johannesburg-chamber-of-commerce-and-industry-jcci/?originalSubdomain=za"
+                    target="_blank" aria-label="LinkedIn">
+                    <img src="./images/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+    
+            <div class="footer-note">
+                <p>WDD231 Class Project
+                <p>William Mbuyamba Tshani</p>
+                <p>&copy;<span id="currentyear">Lorem</span> • Johannesburg Chamber of Commerce</p>
+                <p><span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
