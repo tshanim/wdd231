@@ -151,13 +151,19 @@ button .hamburger {
     color: var(--nav-hover-link-color);
 }
 
-.navigation a:hover {
+/*.navigation a:hover {
     background-color: #E07A5F;
-}
+}*/
 
-nav a.active {
+/*nav a.active {
     background-color: #fef9d9;
     color: var(--oxford-blue-3);
+}*/
+
+/***************** WAY FINDING *************/
+.navigation li.home-page {
+    background-color: #E07A5F;
+    color: var(--oxford-blue-3)
 }
 
 /* **************** MAIN CONTENT ************ */
