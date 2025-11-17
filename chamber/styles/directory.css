@@ -3,7 +3,7 @@ main {
     margin: 0 10px;
 }
 
-.Main-title {
+.main-title {
     color: var(--headline-color-on-white);
     text-align: center;
     font-size: var(--font-size-large);
