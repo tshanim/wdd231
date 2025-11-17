@@ -111,8 +111,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 const myKey = "90158c8799bb28ca5c3054efdcbe85fd";
-const myLat = "8.999893532275784";
-const myLon = "-79.52049637702123";
+const myLat = "-26.2041";
+const myLon = "28.0473";
 
 const time = new Date();
 const day = time.getDay();
@@ -127,7 +127,7 @@ const weekdays = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    const urlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}`;
+    const urlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&units=metric&appid=${myKey}`;
 
     async function apiFetch() {
         try {
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="weather-content"></div>
                     <p>Temperature <span id="current-temp">${parseFloat(
                         data.main.temp
-                    ).toFixed(0)}&deg;F</span></p>
+                    ).toFixed(0)}&deg;C</span></p>
                     <figure>
                         <img id="weather-icon" src="${iconsrc}" alt="${desc}">
                         <figcaption>${desc}</figcaption>
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLon}&appid=${myKey}`;
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLon}&units=metric&appid=${myKey}`;
 
     async function apiForecastFetch() {
         try {
@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             document.getElementById(
                 `temp-${index + 1}`
-            ).textContent = `${parseFloat(dailyData.main.temp).toFixed(0)}°F`;
+            ).textContent = `${parseFloat(dailyData.main.temp).toFixed(0)}°C`;
         });
     };
 
