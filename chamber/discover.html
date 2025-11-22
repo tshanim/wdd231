@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Directory | Chamber of Johannesburg">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tshanim.github.io/wdd231/chamber/images/logo-chamber-jcci.webp">
+    <meta property="og:url" content="https://tshanim.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description"
+        content="Empowering Johannesburg’s business community through connection, visibility, and growth opportunities. Join the Chamber and shape the future of local enterprise">
+    <meta property="fb:app_id" content="your-app-id-here">
+
+    <title>Verified Business Directory and Johannesburg Chamber of Commerce</title>
+    <meta name="description"
+        content="Discover trusted businesses, upcoming events, and local resources in Johannesburg’s Chamber directory">
+    <meta name="author" content="William Mbuyamba Tshani">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
+    </noscript>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/global.css">
+
+    <script type="module" src="./scripts/app.js"></script>
+    <script src="./scripts/modules/discover.js" defer></script>
+
+
+    <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/ico">
+    <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="discover-page">
+    <header>
+        <nav>
+            <div class="box-logo-header">
+                <img class="logo-chamber" src="../chamber/images/logo-chamber-jcci.webp" alt="JCCI">
+                <h1 class="nameHeader">Johannesburg City<br>Chamber of Commerce</h1>
+                <button name="navigation button" id="menu" aria-label="Toggle menu"></button>
+            </div>
+            <ul>
+                <li><a class="nav-a " href="./index.html">Home</a></li>
+                <li><a class="nav-a " href="./discover.html">Discover</a></li>
+                <li><a class="nav-a " href="./directory.html">Directory</a></li>
+                <li><a class="nav-a " href="./join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="discover">
+        <section class="side-bar">
+            <article class="article-01">
+                <header>
+                    <h3>Demographics</h3>
+                </header>
+                <ul>
+                    <li><strong>Capital:</strong> Panama City</li>
+                    <li><strong>Currencies:</strong> United States Dollar, Panamanian Balboa</li>
+                    <li><strong>Official language:</strong> Spanish</li>
+                    <li><strong>Population:</strong> 4,515,577</li>
+                    <li><strong>Dialing code:</strong> +507</li>
+                </ul>
+            </article>
+            <article id="article-02" class="article-02">
+            </article>
+            <article class="article-03">
+                <table id="calendar">
+                    <caption></caption> <!-- Moved out of thead -->
+                    <thead>
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                    </thead>
+                    <tbody> </tbody>
+                </table>
+            </article>
+    
+        </section>
+        <section class="local-photos">
+            <figure>
+                <img data-src="images/load-imagen-01.png" src="images/load-imagen-01.png"
+                    alt="Beautiful sunset over the beach" class="lazy-image" loading="lazy">
+                <figcaption>Beautiful sunset over the beach</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/load-imagen-02.png" src="images/load-imagen-02.png" alt="Historic town square"
+                    class="lazy-image" loading="lazy">
+                <figcaption>Historic town square</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/load-imagen-03.png" src="images/load-imagen-03.png" alt="Lush rainforest"
+                    class="lazy-image" loading="lazy">
+                <figcaption>Lush rainforest</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/load-imagen-04.png" src="images/load-imagen-04.png" alt="Mountain landscape"
+                    class="lazy-image" loading="lazy">
+                <figcaption>Mountain landscape</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/load-imagen-05.png" src="images/load-imagen-05.png" alt="Colonial architecture"
+                    class="lazy-image" loading="lazy">
+                <figcaption>Colonial architecture</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/load-imagen-06.png" src="images/load-imagen-06.png" alt="Vibrant city skyline"
+                    class="lazy-image" loading="lazy">
+                <figcaption>Vibrant city skyline</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Johannesburg Chamber of Commerce</h3>
+                <p>Address: 100 Commissioner Street, Johannesburg, South Africa</p>
+                <p>Email: <a href="mailto:info@joburgcc.org">info@joburgcc.org</a></p>
+                <p>Phone: <a href="tel:+27115552300">+27 (11) 555-2300</a></p>
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.youtube.com/channel/UCJ49rT-RxvOmdSP6T9h7dJw" target="_blank" aria-label="YouTube">
+                    <img src="./images/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://x.com/JHBJCCI/status/1878750828754001962" target="_blank" aria-label="Twitter">
+                    <img src="./images/twitter-x.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/company/johannesburg-chamber-of-commerce-and-industry-jcci/?originalSubdomain=za"
+                    target="_blank" aria-label="LinkedIn">
+                    <img src="./images/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+
+            <div class="footer-note">
+                <p>WDD231 Class Project
+                <p>William Mbuyamba Tshani</p>
+                <p>&copy;<span id="currentyear">Lorem</span> • Johannesburg Chamber of Commerce</p>
+                <p><span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
