@@ -19,22 +19,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalContent = {
         npModal: {
             title: "Non Profit Membership Benefits",
-            content: "Access to community events, free resources, and more.",
+            content: "Complimentary access to community programs, shared resources, and visibility within the chamber network.",
         },
         bronzeModal: {
             title: "Bronze Membership Benefits",
             content:
-                "Discounted services, networking opportunities, and exclusive events.",
+                "Affordable entry-level membership with discounted services, networking opportunities, and invitations to select events.",
         },
         silverModal: {
             title: "Silver Membership Benefits",
             content:
-                "Includes everything from Bronze plus premium resources and marketing support.",
+                "All Bronze benefits plus enhanced marketing support, premium resources, and greater visibility in chamber directories.",
         },
         goldModal: {
             title: "Gold Membership Benefits",
             content:
-                "Full premium support, priority services, and elite event invitations.",
+                "Comprehensive membership including full premium support, priority services, and exclusive access to elite events and leadership forums.",
         },
     };
 
