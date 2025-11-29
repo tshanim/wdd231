@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const timestampField = document.getElementById("timestamp");
-    // ✅ Formatter for South Africa Standard Time (SAST, UTC+2)
+    // Formatter for South Africa Standard Time (SAST, UTC+2)
     const formatter = new Intl.DateTimeFormat("en-ZA", {
         timeZone: "Africa/Johannesburg",
         weekday: "long",   // e.g. Saturday
