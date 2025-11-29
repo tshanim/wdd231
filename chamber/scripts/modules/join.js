@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
     const timestampField = document.getElementById("timestamp");
-    timestampField.value = new Date().toISOString();
+    // ✅ Formatter for South Africa Standard Time (SAST, UTC+2)
+    const formatter = new Intl.DateTimeFormat("en-ZA", {
+        timeZone: "Africa/Johannesburg",
+        weekday: "long",   // e.g. Saturday
+        year: "numeric",   // e.g. 2025
+        month: "long",     // e.g. November
+        day: "numeric",    // e.g. 29
+        hour: "numeric",   // e.g. 11
+        minute: "2-digit", // e.g. 54
+        hour12: true       // AM/PM format
+    });
+
+    // ✅ Set hidden input value to current South Africa time
+    timestampField.value = formatter.format(new Date());
 
     const modals = {
         npModal: document.getElementById("npModal"),
