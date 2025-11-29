@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         hour12: true       // AM/PM format
     });
 
-    // ✅ Set hidden input value to current South Africa time
+    // Set hidden input value to current South Africa time
     timestampField.value = formatter.format(new Date());
 
     const modals = {
