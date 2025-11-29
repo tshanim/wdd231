@@ -59,47 +59,47 @@
     <main>
         <form method="get" action="thankyou.html">
             <h2 class="sub-title-form">Membership Application</h2>
-            <label class="name-lb">
+            <label for="name" class="name-lb">
                 Name:
             </label>
-            <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required
+            <input type="text" id="firstName" name="firstName" title="Enter your first name" autocomplete="given-name" required
                 placeholder="First">
-            <input type="text" name="lastName" title="Enter your first name" autocomplete="given-name" required
+            <input type="text" id="lastName" name="lastName" title="Enter your first name" autocomplete="family-name" required
                 placeholder="Last">
             <br><br>
         
-            <label>
+            <label for="organizationTitle">
                 Organizational Title:
             </label>
-            <input type="text" name="organizationTitle" title="Enter your organizational title"
-                autocomplete="organization-title" pattern="[A-Za-z\s\-.,']{2,}" required>
+            <input type="text" id="organizationTitle" name="organizationTitle" title="Enter your organizational title"
+                autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
             <br><br>
         
-            <label>
+            <label for="email">
                 Email Address:
             </label>
-            <input type="email" name="email" title="Enter your email address" autocomplete="email"
+            <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
                 placeholder="example@email.com" required>
             <br><br>
         
-            <label>
+            <label for="phone">
                 Mobile Phone Number:
             </label>
-            <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required
-                placeholder="+1 123-456-7890">
+            <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required
+                placeholder="+27 123-456-7890">
             <br><br>
         
-            <label>
+            <label for="organization">
                 Business/Organization Name:
             </label>
-            <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization"
+            <input type="text" id="organization" name="organization" title="Enter your business or organization name" autocomplete="organization"
                 required>
             <br><br>
         
-            <label>
+            <label for="membershipLevel">
                 Membership Level:
             </label>
-            <select name="membershipLevel" required>
+            <select id="membershipLevel" name="membershipLevel" required>
                 <option value="" disabled selected>Select a membership level</option>
                 <option value="NP">NP Membership (Non-Profit)</option>
                 <option value="Bronze">Bronze Membership</option>
@@ -108,10 +108,10 @@
             </select>
             <br><br>
         
-            <label>
+            <label for="organizationDescription">
                 Business/Organization Description:
             </label>
-            <textarea name="organizationDescription" title="Describe your business or organization" rows="4"
+            <textarea id="organizationDescription" name="organizationDescription" title="Describe your business or organization" rows="4"
                 cols="50"></textarea>
             <br><br>
         
