@@ -195,7 +195,17 @@ nav li:last-child {
 /* Discover page */
 
 /* General style */
+
+* {
+    box-sizing: border-box;
+}
+
 .discover {
+    margin: 1rem 9px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    background-color: #eee;
+    overflow: hidden;
     display: grid;
     gap: 20px;
     padding: 20px;
@@ -236,6 +246,7 @@ nav li:last-child {
     border: 1px solid #ccc;
     padding: 15px;
     background: #fff;
+    border-radius: 8px;
     text-align: center;
 }
 
@@ -324,7 +335,7 @@ footer {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 2rem;    
+    gap: 2rem;
 }
 
 .contact-info,
@@ -406,7 +417,7 @@ a {
     /*nav a:hover:not(.active) {
         color: var(--nav-hover-link-color);
     }*/
-    
+
     .nav-a:hover {
         color: var(--nav-hover-link-color);
     }
@@ -445,4 +456,3 @@ a {
         display: none;
     }
 }
-
