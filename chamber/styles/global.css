@@ -445,3 +445,35 @@ a {
         display: none;
     }
 }
+
+.visitor-message {
+    background: linear-gradient(90deg, #ff6b6b, #ffcc00);
+    /* Bold gradient */
+    border-bottom: 3px solid #333;
+    padding: 15px;
+    font-family: var(--open-sans-paragraph-font);
+    font-size: var(--font-size-base);
+    color: #fff;
+    /* White text for contrast */
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.close-message {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    /* Matches text */
+    cursor: pointer;
+}
+
+.close-message:hover {
+    color: #000;
+    /* Hover contrast */
+}

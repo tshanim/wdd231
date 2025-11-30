@@ -90,3 +90,36 @@ function getExtraDetails(name) {
   }
 }
 
+function showVisitorMessage() {
+    const messageArea = document.getElementById("visitor-text");
+    const banner = document.getElementById("visitor-message");
+    const lastVisit = localStorage.getItem("lastVisit");
+    const now = new Date();
+
+    if (!lastVisit) {
+      // First visit
+      messageArea.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+      const lastVisitDate = new Date(lastVisit);
+      const diffTime = now - lastVisitDate;
+      const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+      if (diffDays < 1) {
+        messageArea.textContent = "Back so soon! Awesome!";
+      } else if (diffDays === 1) {
+        messageArea.textContent = "You last visited 1 day ago.";
+      } else {
+        messageArea.textContent = `You last visited ${diffDays} days ago.`;
+      }
+    }
+
+    // Update localStorage with current visit
+    localStorage.setItem("lastVisit", now.toISOString());
+
+    // Close button functionality
+    document.getElementById("close-message").addEventListener("click", () => {
+      banner.style.display = "none";
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", showVisitorMessage);
