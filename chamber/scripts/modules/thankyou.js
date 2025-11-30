@@ -11,19 +11,9 @@ document.getElementById("mobile-number").textContent =
 document.getElementById("business-name").textContent =
     urlParams.get("organization") || "N/A";
 
-// Force timestamp to South africa Standard Time (SAST, UTC+2)
-const formatter = new Intl.DateTimeFormat("en-ZA", {
-    timeZone: "Africa/Johannesburg",
-    weekday: "long",   // Saturday
-    year: "numeric",   // 2025
-    month: "long",     // November
-    day: "numeric",    // 29
-    hour: "numeric",   // 11
-    minute: "2-digit", // 13
-    hour12: true       // AM/PM format
-});
-
+// Force timestamp to South Africa Standard Time (SAST, UTC+2)
 const timestamp =
-    urlParams.get("timestamp") || formatter.format(new Date());
+    urlParams.get("timestamp") ||
+    new Date().toLocaleString("en-ZA", { timeZone: "Africa/Johannesburg" });
 
 document.getElementById("timestamp").textContent = timestamp;
