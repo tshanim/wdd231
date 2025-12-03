@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank-you page for South Africa Experience – A Cultural and Travel Guide">
+    <meta name="author" content="William Mbuyamba Tshani">
+
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32" type="image/ico">
+
+    <!-- Essential META Tags -->
+    <meta property="og:title" content="Thank You | South Africa Experience">
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Thank you for booking with South Africa Experience. Your journey into culture and adventure begins now.">
+    <meta property="og:image" content="images/favicon/favicon.png">
+    <meta property="og:url" content="https://yourgithubusername.github.io/sa-experience/thankyou.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Thank You | South Africa Experience</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="box-logo-header">
+                <img class="logo-chamber" src="images/favicon/favicon-circle-200x200.png"
+                    alt="South Africa Experience Logo" />
+                <h1 class="nameHeader"><strong>South Africa</strong> <br>Experience</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thank-you">
+            <div class="thank-you-content">
+                <h1>Thank You!</h1>
+                <p>We appreciate your interest and your trust in us.</p>
+                <p>Your booking has been confirmed — your South African adventure begins now!</p>
+                <a href="index.html" class="button">Back to Home</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear">2025</span> - William Mbuyamba Tshani - South Africa Experience</p>
+        <p id="lastModified">Last updated: <span id="lastModifiedDate"></span></p>
+    </footer>
+
+    <script>
+        // Auto-update footer date
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModifiedDate").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
