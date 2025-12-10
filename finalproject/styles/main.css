@@ -593,7 +593,7 @@ main {
 .box-contact-action {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: auto 1f 1fr;
+    grid-template-rows: auto 1fr 1fr;
     margin-top: 20px;
 }
 
@@ -1209,7 +1209,7 @@ footer p:first-child {
     .contact-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1f 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .nav-container {
@@ -1226,7 +1226,7 @@ footer p:first-child {
         align-items: center;
     }
 
-    /* Opiniones en línea usando Flexbox */
+    /* Online Opinions using Flexbox */
     .section-opinion h2 {
         margin-bottom: 30px;
     }
