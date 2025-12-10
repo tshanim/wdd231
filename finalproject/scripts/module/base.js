@@ -1,28 +1,26 @@
 export function initializeCommon() {
     document.addEventListener("DOMContentLoaded", () => {
         const hamButton = document.querySelector("#menu");
-        const navigation = document.querySelector("nav");
+        const navList = document.querySelector("nav ul");
 
         // Toggle navigation menu
         hamButton.addEventListener("click", () => {
-            navigation.classList.toggle("open");
-            hamButton.classList.toggle("open");
+            hamButton.classList.toggle("open");   // switches ≡ to X
+            navList.classList.toggle("show");     // shows/hides nav links
         });
-        // footer
+
+        // Footer info
         document.getElementById("currentyear").textContent =
             new Date().getFullYear();
-        document.getElementById(
-            "lastModified"
-        ).textContent = `Last Modified: ${document.lastModified}`;
-    });
-    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("lastModified").textContent =
+            `Last Modified: ${document.lastModified}`;
+
+        // Active nav link highlighting
         const bodyId = document.body.id;
         const navLinks = document.querySelectorAll("nav .nav-a");
 
         navLinks.forEach((link) => {
-            if (
-                link.getAttribute("href").includes(bodyId.replace("-page", ""))
-            ) {
+            if (link.getAttribute("href").includes(bodyId.replace("-page", ""))) {
                 link.classList.add("active");
             } else {
                 link.classList.remove("active");

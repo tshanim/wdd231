@@ -7,7 +7,7 @@
     <meta name="description" content="Home page for South Africa Experience – A Cultural and Travel Guide">
     <meta name="author" content="William Mbuyamba Tshani">
 
-    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32" type="image/ico">
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/ico">
 
     <!-- Essential META Tags -->
     <meta property="og:title" content="Home | South Africa Experience">
@@ -39,9 +39,9 @@
     <header>
         <nav>
             <div class="box-logo-header">
-                <img class="logo-chamber" src="images/favicon/favicon-circle-200x200.png"
-                    alt="Logo South Africa Experience" width="200" height="200" loading="lazy" />
-                <h1 class="nameHeader"><strong>South Africa</strong> <br>Experience</h1>
+                <img class="logo-chamber" src="images/south-africa-x-logo.webp"
+                    alt="Logo South Africa Experience" width="340" height="240" loading="lazy" />
+                <h1 class="nameHeader"><strong>A Cultural and Travel</strong><br>Guide</h1>
                 <button name="navigation button" id="menu" aria-label="Toggle menu"></button>
             </div>
             <ul>
@@ -55,9 +55,9 @@
     <main>
         <section class="intro-box">
             <picture class="intro-img">
-                <source media="(min-width: 900px)" srcset="images/load-image-sa-large.png" width="900" height="760">
-                <source media="(min-width: 620px)" srcset="images/load-image-sa-medium.png" width="620" height="760">
-                <img src="images/load-image-sa-small.png" alt="South Africa landscape" width="420" height="760"
+                <source media="(min-width: 900px)" srcset="images/south-africa-city-large.webp" width="900" height="760">
+                <source media="(min-width: 620px)" srcset="images/south-africa-city-medium.webp" width="620" height="760">
+                <img src="images/south-africa-city-small.webp" alt="South Africa landscape" width="420" height="760"
                     loading="lazy">
             </picture>
             <div class="intro-content">
@@ -81,21 +81,21 @@
 
             <article class="main_article">
                 <div class="card_01 box-card">
-                    <img src="images/card-img-sa-01.png" alt="Table Mountain Cape Town" width="520" height="767"
+                    <img src="images/table-mountain.webp" alt="Table Mountain Cape Town" width="520" height="767"
                         loading="lazy">
                     <h4>Customized Tours</h4>
                     <p>Tailored trips to match your interests—whether culture, safari, or a blend of both.</p>
                 </div>
 
                 <div class="card_02 box-card">
-                    <img src="images/card-img-sa-02.png" alt="Kruger National Park Safari" width="520" height="767"
+                    <img src="images/kruger-safari.webp" alt="Kruger National Park Safari" width="520" height="767"
                         loading="lazy">
                     <h4>Seamless Arrangements</h4>
                     <p>We handle transport, tickets, and bookings so you can simply enjoy the journey.</p>
                 </div>
 
                 <div class="card_03 box-card">
-                    <img src="images/card-img-sa-03.png" alt="Drakensberg Mountains" width="520" height="767"
+                    <img src="images/drakensberg.webp" alt="Drakensberg Mountains" width="520" height="767"
                         loading="lazy">
                     <h4>Easy Rescheduling</h4>
                     <p>Plans change—we make rescheduling easy, keeping your adventure stress-free.</p>
@@ -103,51 +103,60 @@
             </article>
         </section>
 
-        <section class="social-box">
+        <section class="cities-weather-box">
             <div class="back-box">
                 <div class="action-box">
-                    <img src="images/social-box-sa.png" alt="South Africa adventure" width="900" height="767"
+                    <img src="images/south-africa-famous-cities.webp" alt="South Africa adventure" width="900" height="767"
                         loading="lazy">
                     <div class="action-msg">
-                        <h2>Book a Tour with Us</h2>
+                        <h2>Book a Tour with Us to South Africa 3 Famous Cities</h2>
                         <h4>Unforgettable Moments Await</h4>
                     </div>
                 </div>
-                <div class="socia-info">
-                    <div class="contact-item">
-                        <h4>Phone</h4>
-                        <p>(+27) 123-456-789</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Email:</h4>
-                        <p>hello@sa-experience.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Social:</h4>
-                        <p>
-                            <a href="#"><img src="images/logos/Facebook_Logo_Secondary.png" alt="Facebook" width="104"
-                                    height="104" loading="lazy"></a>
-                            <a href="#"><img src="images/logos/logo-x-version-white.png" alt="X (Twitter)" width="104"
-                                    height="104" loading="lazy"></a>
-                            <a href="#"><img src="images/logos/Instagram_Glyph_White.png" alt="Instagram" width="104"
-                                    height="104" loading="lazy"></a>
-                        </p>
-                    </div>
-                    <div class="weather-main" id="weather-main"></div>
+                <div class="weather-info">
+                    <!-- Weather for Johannesburg -->
+                    <div class="weather-main" id="weather-johannesburg"></div>                
+                    <!-- Weather for Durban -->
+                    <div class="weather-main" id="weather-durban"></div>                
+                    <!-- Weather for Cape Town -->
+                    <div class="weather-main" id="weather-capetown"></div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy;<span id="currentyear">2025</span> - William Mbuyamba Tshani - South Africa Experience</p>
-        <p id="lastModified">Last updated: <span id="lastModifiedDate"></span></p>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>South Africa Experience Travel Guide</h3>
+                <p>Address: 100 Jeppe Street, Johannesburg, SA</p>
+                <p>Email: <a href="mailto:info@sa-experience.org">info@sa-experience.org</a></p>
+                <p>Phone: <a href="tel:+27111234567">+27 (11) 123-4567</a></p>
+            </div>
+        
+            <div class="social-media">
+                <a href="https://www.youtube.com/user/SouthAfricanTourism" target="_blank" aria-label="YouTube">
+                    <img src="./images/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com/visitsouthafrica/?hl=en" target="_blank" aria-label="Twitter">
+                    <img src="./images/twitter-x.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/company/south-african-tourism/?originalSubdomain=za"
+                    target="_blank" aria-label="LinkedIn">
+                    <img src="./images/linkedin.svg" alt="LinkedIn">
+                </a>
+                </a>
+            </div>
+        
+            <div class="footer-note">
+                <h3>WDD231 Class Final Project</h3>
+                <p>William Mbuyamba Tshani</p>
+                <p>&copy;<span id="currentyear">Lorem</span> • Johannesburg • South Africa</p>
+                <p><span id="lastModified"></span></p>
+            </div>
+        </div>
     </footer>
-
-    <script>
-        // Auto-update footer date
-        document.getElementById("lastModifiedDate").textContent = document.lastModified;
-    </script>
+    
 </body>
 
 </html>

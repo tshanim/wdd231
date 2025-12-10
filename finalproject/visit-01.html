@@ -33,20 +33,14 @@
     <!-- Scripts -->
     <script type="module" src="scripts/app.mjs"></script>
     <script src="scripts/module/visit.js" defer></script>
-    <script type="module" src="scripts/module/visit-places.js"></script>
 </head>
-<!-- Visitor message banner at the very top of main content -->
-<div id="visitor-message" class="visitor-message">
-    <span id="visitor-text"></span>
-    <span id="close-message" class="close-message">&times;</span>
-</div>
 
 <body id="visit-page">
     <header>
         <nav>
             <div class="box-logo-header">
-                <img class="logo-chamber" src="images/south-africa-x-logo.webp"
-                    alt="Logo South Africa Experience" width="200" height="200" loading="lazy" />
+                <img class="logo-chamber" src="images/south-africa-x-logo.webp" alt="Logo South Africa Experience"
+                    width="200" height="200" loading="lazy" />
                 <h1 class="nameHeader"><strong>A Cultural and Travel</strong> <br>Guide</h1>
                 <button name="navigation button" id="menu" aria-label="Toggle menu"></button>
             </div>
@@ -59,6 +53,36 @@
     </header>
 
     <main>
+        <!-- Tour Packages -->
+        <section class="section-principal">
+            <h2>South Africa <span>Adventures</span></h2>
+            <article class="price-box">
+                <div>
+                    <img src="images/nature-adventure-drakensberg.webp" alt="Drakensberg Mountain Hike" width="540"
+                        height="960" loading="lazy">
+                    <h4>Self-Paced Tour</h4>
+                    <h5>$399</h5>
+                    <p>Explore at your own pace with a flexible itinerary. Perfect for independent travelers.</p>
+                    <button class="css-button-arrow--black" onclick="location.href='./contact.html'">BOOK NOW</button>
+                </div>
+                <div>
+                    <img src="images/nature-adventure-under-sea.webp" alt="CapeTown Adventures for Daredevils"
+                        width="540" height="960" loading="lazy">
+                    <h4>Semi-Guided Tour</h4>
+                    <h5>$499</h5>
+                    <p>A mix of guided and self-paced experiences with support from local experts.</p>
+                    <button class="css-button-arrow--black" onclick="location.href='./contact.html'">BOOK NOW</button>
+                </div>
+                <div>
+                    <img src="images/nature-adventure-cape-of-good-hope.webp" alt="Cape Point & Peninsula Tour"
+                        width="540" height="960" loading="lazy">
+                    <h4>Fully Guided Tour</h4>
+                    <h5>$599</h5>
+                    <p>Immerse yourself in South Africa with a personal guide for a seamless experience.</p>
+                    <button class="css-button-arrow--black" onclick="location.href='./contact.html'">BOOK NOW</button>
+                </div>
+            </article>
+        </section>
 
         <!-- Services -->
         <section class="section-media">
@@ -66,67 +90,31 @@
             <p>South Africa Experience provides curated travel packages, local expertise, and unforgettable adventures.
                 Whether you’re seeking wildlife safaris, cultural immersion, or scenic escapes, our services make your
                 journey exceptional.</p>
-            <div class="visit-container">
-        
-            </div>
-        </section>
-
-        <!-- Tour Packages -->
-        <section class="section-principal">
-            <h2>Touristic Site Package<span> Offers</span></h2>
-            <article class="price-box">
-                <div>
-                    <img src="images/nature-adventure-cape-of-good-hope.webp" alt="Budget-Friendly South Africa Tour" width="540" height="960"
+            <article class="slider-container slider-dimensions">
+                <div class="slider">
+                    <div data-img-url="images/incredible-adventure.webp" class="slider-dimensions" width="470"
                         loading="lazy">
-                    <h4>Budget Tour</h4>
-                    <h5>$199</h5>
-                    <p>Experience the must‑see highlights at an affordable price. Ideal for travelers on a budget who still want
-                        adventure.</p>
-                    <button class="css-button-arrow--black" onclick="location.href='./contact.html'">BOOK NOW</button>
-                </div>
-                <div>
-                    <img src="images/nature-adventure-drakensberg.webp" alt="Drakensberg Mountain Hike" width="540" height="960"
+                        <h4>Custom Tour Packages</h4>
+                    </div>
+                    <div data-img-url="images/safari-guide-experience.webp" class="slider-dimensions" width="470"
                         loading="lazy">
-                    <h4>Self-Paced Tour</h4>
-                    <h5>$399</h5>
-                    <p>Explore at your own pace with a flexible itinerary. Perfect for independent travelers.</p>
-                    <button class="css-button-arrow--black" onclick="location.href='./contact.html'">BOOK NOW</button>
-                </div>
-                <div>
-                    <img src="images/nature-adventure-drakensberg-hike.webp" alt="CapeTown Adventures for Daredevils" width="540" height="960"
+                        <h4>Expert Local Guides</h4>
+                    </div>
+                    <div data-img-url="images/cultural-experiences.webp" class="slider-dimensions" width="470"
                         loading="lazy">
-                    <h4>Semi-Guided Tour</h4>
-                    <h5>$499</h5>
-                    <p>A mix of guided and self-paced experiences with support from local experts.</p>
-                    <button class="css-button-arrow--black" onclick="location.href='./contact.html'">BOOK NOW</button>
+                        <h4>Unique Cultural Activities</h4>
+                    </div>
+                    <div data-img-url="images/boat-cruising.webp" class="slider-dimensions" width="470" loading="lazy">
+                        <h4>Transport & Transfers</h4>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/nature-adventure-under-sea.webp" alt="Cape Point & Peninsula Tour" width="540" height="960"
-                        loading="lazy">
-                    <h4>Fully Guided Tour</h4>
-                    <h5>$599</h5>
-                    <p>Immerse yourself in South Africa with a personal guide for a seamless experience.</p>
-                    <button class="css-button-arrow--black" onclick="location.href='./contact.html'">BOOK NOW</button>
-                </div>
-                <div>
-                    <img src="images/nature-adventure-safari-luxury.webp" alt="Luxury Safari Experience" width="540" height="960"
-                        loading="lazy">
-                    <h4>Luxury Tour</h4>
-                    <h5>$899</h5>
-                    <p>Enjoy premium accommodations, private transfers, and exclusive experiences for a truly indulgent adventure.</p>
-                    <button class="css-button-arrow--black" onclick="location.href='./contact.html'">BOOK NOW</button>
-                </div>
-                <div>
-                    <img src="images/nature-adventure-accommodation.webp" alt="Luxury Accommodation in South Africa" width="540"
-                        height="960" loading="lazy">
-                    <h4>Accommodation Package from</h4>
-                    <h5>$299</h5>
-                    <p>Stay in hand‑picked lodges, boutique hotels, or cozy guesthouses. Includes breakfast and local hospitality for a
-                        comfortable experience.</p>
-                    <button class="css-button-arrow--black" onclick="location.href='./contact.html'">BOOK NOW</button>
+                <div class="nav-container slider-dimensions">
+                    <button data-index-change="-1">&lt;</button>
+                    <div class="index-container"></div>
+                    <button data-index-change="1">&gt;</button>
                 </div>
             </article>
-        </section>      
+        </section>
 
         <!-- Testimonials -->
         <section class="section-opinion">
@@ -157,7 +145,7 @@
                 <p>Email: <a href="mailto:info@sa-experience.org">info@sa-experience.org</a></p>
                 <p>Phone: <a href="tel:+27111234567">+27 (11) 123-4567</a></p>
             </div>
-        
+
             <div class="social-media">
                 <a href="https://www.youtube.com/user/SouthAfricanTourism" target="_blank" aria-label="YouTube">
                     <img src="./images/youtube.svg" alt="YouTube">
@@ -171,7 +159,7 @@
                 </a>
                 </a>
             </div>
-        
+
             <div class="footer-note">
                 <h3>WDD231 Class Project</h3>
                 <p>William Mbuyamba Tshani</p>
