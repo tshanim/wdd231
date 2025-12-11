@@ -99,4 +99,4 @@ function showVisitorMessage() {
     });
   }
 
-  document.addEventListener("DOMContentLoaded", showVisitorMessage);
+  document.addEventListener("DOMContentLoaded", showVisitorMessage); 
