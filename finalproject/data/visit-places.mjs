@@ -40,5 +40,5 @@ export const items = [
     "description": "The world’s third-largest canyon, known for lush subtropical foliage, dramatic cliffs, and viewpoints like God’s Window.",
     "image": "images/visit-places/blyde-river-canyon.png",
     "extra": "Blyde River Canyon offers iconic viewpoints like God’s Window and the Three Rondavels. It’s a paradise for photographers and nature lovers."
-  },
+  }
 ];
